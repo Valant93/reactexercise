@@ -17,7 +17,9 @@ export default function Login() {
     setRemember(e.target.checked);
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
     console.log("Username:", username);
     console.log("Password:", password);
     console.log("Remember me:", remember);
